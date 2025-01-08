@@ -1,0 +1,11 @@
+je cherche à modifier la simulation des dynamiques de la variance. 
+En effet la méthode d'Euler ne garantit pas v_t > 0, ce qui doit être à l'origine des NaN qui mettent ma nappe en echec. 
+
+je cherche à passer en schéma Quadratic Exponential, dans laquelle je vais approximer la distributions conditionnelle de v_t+1, sachant v_t, par une distribution qui garantie v_t+1 > 0. 
+
+On calcule le param psi, 
+	s'il est faible --> génération des valeurs selon une distribution uniforme U[a,b].
+	s'il est élevé --> génération des valeurs selon une distribution exponentielle (=> afin de capter les valeurs extrêmes)
+
+Implémentation dans code : 
+			def heston_qe()
