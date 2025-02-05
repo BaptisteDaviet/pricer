@@ -1,10 +1,13 @@
 **Overview**
 
 **A Python-based option pricer leveraging the Heston model to account for stochastic volatility, offering advanced risk analysis and visualization tools**
+
 This option pricer implements the Heston model, a stochastic volatility model that more accurately captures market dynamics compared to Black-Scholes. The tool supports various option types and trading strategies, with built-in Monte Carlo simulations for pricing and risk analysis.
 
 **Heston Model Implementation**
+
 The Black-Scholes model assumes a fixed volatility, but in reality, market volatility varies over time and often exhibits patterns like:
+
 **Volatility clustering:** Periods of high volatility tend to follow other high-volatility periods.
 **Mean reversion:** Volatility tends to revert to a long-term average.
 **Smile & Skew Effects:** The implied volatility observed in options markets often deviates from Black-Scholes' constant volatility assumption.
@@ -32,6 +35,7 @@ And the key features:
 - **Customizable Parameters**: Interface to adjust model parameters (kappa, theta, xi, rho, nu0).
 
 **Future Developments**
+
 In the longer term, the aim is to improve the pricer by adding several advanced features:
 
 - Calculating and plotting Greeks for barrier options and trading strategies to improve risk sensitivity analysis.
