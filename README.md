@@ -9,7 +9,9 @@ This option pricer implements the Heston model, a stochastic volatility model th
 The Black-Scholes model assumes a fixed volatility, but in reality, market volatility varies over time and often exhibits patterns like:
 
 **Volatility clustering:** Periods of high volatility tend to follow other high-volatility periods.
+
 **Mean reversion:** Volatility tends to revert to a long-term average.
+
 **Smile & Skew Effects:** The implied volatility observed in options markets often deviates from Black-Scholes' constant volatility assumption.
 The Heston model captures these effects by modeling volatility as a random process, making it particularly useful for options on highly volatile assets or exotic derivatives, where sensitivity to volatility is more pronounced.
 This pricer simulates thousands of stochastic volatility paths using Monte Carlo methods, providing more realistic option pricing and risk evaluation compared to traditional models.
