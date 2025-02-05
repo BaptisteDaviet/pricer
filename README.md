@@ -1,4 +1,5 @@
 **Overview**
+
 **A Python-based option pricer leveraging the Heston model to account for stochastic volatility, offering advanced risk analysis and visualization tools**
 This option pricer implements the Heston model, a stochastic volatility model that more accurately captures market dynamics compared to Black-Scholes. The tool supports various option types and trading strategies, with built-in Monte Carlo simulations for pricing and risk analysis.
 
